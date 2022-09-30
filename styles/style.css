@@ -98,13 +98,14 @@ main {
 }
 
 #main-media {
-  width: 35vw;
+  width: 30vw;
   position: relative;
   transition: transform 350ms ease-out;
+  margin-top: 2.5rem;
 }
 
 #main-media-img {
-  width: 35vw;
+  width: 30vw;
   height: 75vh;
   /* border-radius: 65%; */
   cursor: pointer;
@@ -115,8 +116,8 @@ main {
 }
 
 #main-media-img .profile-img {
-  width: 80%;
-  height: 80%;
+  width: 95%;
+  height: 95%;
   object-fit: cover;
   transition: transform 350ms ease-out;
 }
@@ -131,7 +132,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.6);
   border-radius: 20px;
   padding: 0 0.5rem;
   color: #00092c;
@@ -141,28 +142,30 @@ main {
   font-weight: bold;
 }
 
-.media-tab1 {
+#main-media-tabs .media-tab1 {
   transform: translateX(-300%);
   transition: transform 350ms ease-in;
   position: absolute;
-  top: 450px;
+  top: 400px;
   left: -200px;
+  background: rgba(255, 255, 255, 0.8);
 }
 
-.media-tab2 {
+#main-media-tabs .media-tab2 {
   transform: translateX(-400%);
   transition: transform 350ms ease-in;
   position: absolute;
-  top: 490px;
+  top: 470px;
   right: 50px;
+  background: rgba(255, 255, 255, 0.8);
 }
 
-.media-tab3 {
+#main-media-tabs .media-tab3 {
   transform: translateX(-300%);
   transition: transform 350ms ease-in;
   position: absolute;
-  top: 210px;
-  left: -160px;
+  top: 190px;
+  left: -130px;
 }
 
 /* media-tabs when HOVER */
@@ -206,7 +209,8 @@ main {
 }
 
 #main-text {
-  width: 25vw;
+  margin-top: 2.5rem;
+  width: 30vw;
 }
 
 /* HOVER effect */
