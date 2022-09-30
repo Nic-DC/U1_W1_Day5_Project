@@ -16,7 +16,7 @@ body {
 
 .container {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background: linear-gradient(#00092c, #ff5f00);
   display: flex;
   flex-direction: column;
@@ -35,6 +35,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
 }
 
 nav #logo {
@@ -66,11 +67,9 @@ nav #logo h3 {
   align-items: center;
 }
 
-#nav-tabs ul li {
+.nav-li {
   list-style-type: none;
   margin-left: 1rem;
-  /* transform: scale(1);
-  transition: transform 350ms ease-out; */
 }
 
 /* nav .nav-li:hover {
@@ -81,7 +80,12 @@ nav .nav-anchors {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.8);
 
-  /* transform: scale(1); */
+  transition: color 350ms ease-in-out;
+}
+
+.nav-anchors:hover {
+  cursor: pointer;
+  color: #ff5f00;
 }
 
 /* ------------------------
@@ -93,7 +97,7 @@ main {
   justify-content: space-between;
   align-items: flex-start;
   width: 60vw;
-  height: 100%;
+  height: 90vh;
   color: #eeeeee;
 }
 
@@ -209,6 +213,7 @@ main {
 }
 
 #main-text {
+  height: 90vh;
   margin-top: 2.5rem;
   width: 30vw;
   /* height: 100%; */
@@ -219,6 +224,7 @@ main {
 }
 
 #main-text-intro {
+  height: 35vh;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   margin-bottom: 1em;
 }
@@ -232,11 +238,13 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  height: 60vh;
+  width: 30vw;
 }
 
 #main-text-technologies h2 {
   margin-top: 0;
-  margin-bottom: 2rem;
+  /* margin-bottom: 1rem; */
 }
 
 .technologies {
@@ -264,9 +272,14 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 21vh;
-  margin-top: 2rem;
+  height: 15vh;
+  margin-top: 1rem;
 }
+
+.technologies-front-end {
+  margin-bottom: 1rem;
+}
+
 .technologies-images {
   display: flex;
   justify-content: center;
@@ -276,8 +289,8 @@ main {
 
 .technologies-front-end img,
 .technologies-back-end img {
-  width: 65%;
-  height: 65%;
+  width: 70%;
+  height: 70%;
   object-fit: contain;
 }
 
@@ -285,20 +298,4 @@ main {
 .technologies-back-end p {
   font-size: 1rem;
   font-weight: bolder;
-}
-
-/* HOVER effect */
-/* nav: */
-/* #logo:hover ion-icon {
-  color: rgba(255, 255, 255, 0.8);
-} */
-
-/* #logo ion-icon:hover {
-  color: rgba(255, 255, 255, 0.8);
-} */
-
-.nav-anchors:hover {
-  cursor: pointer;
-  color: #ff5f00;
-  transform: scale(1.05);
 }
