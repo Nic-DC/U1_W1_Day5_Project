@@ -16,7 +16,7 @@ body {
 
 .container {
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   background: linear-gradient(#00092c, #ff5f00);
   display: flex;
   flex-direction: column;
@@ -93,7 +93,7 @@ main {
   justify-content: space-between;
   align-items: flex-start;
   width: 60vw;
-  height: 90vh;
+  height: 100%;
   color: #eeeeee;
 }
 
@@ -211,41 +211,80 @@ main {
 #main-text {
   margin-top: 2.5rem;
   width: 30vw;
+  /* height: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
 
+#main-text-intro {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin-bottom: 1em;
+}
+
+#main-text-intro h1 {
+  margin: 0;
+}
+
+#main-text-technologies {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#main-text-technologies h2 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
 .technologies {
   display: flex;
-  /* flex-direction: column; */
-  /* justify-content: center;
-  align-items: flex-start; */
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  /* justify-content: flex-start;
+  align-items: flex-start; */
   width: 30vw;
+  margin: 0;
+}
+
+.technologies p span {
+  color: #00092c;
+  font-size: 1rem;
+  font-weight: bold;
+  display: block;
 }
 
 .technologies-front-end,
 .technologies-back-end {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  /* flex-direction: column; */
+  justify-content: center;
   align-items: center;
-  width: 15vw;
-}
-
-.technologies-front-end img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 21vh;
+  margin-top: 2rem;
+}
+.technologies-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
+.technologies-front-end img,
 .technologies-back-end img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 65%;
+  height: 65%;
+  object-fit: contain;
+}
+
+.technologies-front-end p,
+.technologies-back-end p {
+  font-size: 1rem;
+  font-weight: bolder;
 }
 
 /* HOVER effect */
