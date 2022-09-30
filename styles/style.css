@@ -16,7 +16,7 @@ body {
 
 .container {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background: linear-gradient(#00092c, #ff5f00);
   display: flex;
   flex-direction: column;
@@ -24,8 +24,12 @@ body {
   align-items: center;
 }
 
+/* ------------------------
+            Nav:
+-------------------------*/
+
 nav {
-  width: 60%;
+  width: 60vw;
   height: 10vh;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   display: flex;
@@ -38,11 +42,185 @@ nav #logo {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  cursor: pointer;
 }
 
 nav #logo h3 {
   font-family: "Teko", sans-serif;
   font-size: 2rem;
   letter-spacing: 3px;
+  color: rgba(255, 255, 255, 0.8);
+  user-select: none;
+}
+
+#nav-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+#nav-tabs ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav-tabs ul li {
+  list-style-type: none;
+  margin-left: 1rem;
+  /* transform: scale(1);
+  transition: transform 350ms ease-out; */
+}
+
+/* nav .nav-li:hover {
+  transform: scale(1.1);
+} */
+
+nav .nav-anchors {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+
+  /* transform: scale(1); */
+}
+
+/* ------------------------
+            Main:
+-------------------------*/
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 60vw;
+  height: 90vh;
   color: #eeeeee;
+}
+
+#main-media {
+  width: 35vw;
+  position: relative;
+  transition: transform 350ms ease-out;
+}
+
+#main-media-img {
+  width: 35vw;
+  height: 75vh;
+  /* border-radius: 65%; */
+  cursor: pointer;
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#main-media-img .profile-img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  transition: transform 350ms ease-out;
+}
+
+#main-media-tabs {
+  width: 25vw;
+}
+
+#main-media-tabs .tab {
+  width: 16vw;
+  height: 12vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 0 0.5rem;
+  color: #00092c;
+}
+
+.tab span {
+  font-weight: bold;
+}
+
+.media-tab1 {
+  transform: translateX(-300%);
+  transition: transform 350ms ease-in;
+  position: absolute;
+  top: 450px;
+  left: -200px;
+}
+
+.media-tab2 {
+  transform: translateX(-400%);
+  transition: transform 350ms ease-in;
+  position: absolute;
+  top: 490px;
+  right: 50px;
+}
+
+.media-tab3 {
+  transform: translateX(-300%);
+  transition: transform 350ms ease-in;
+  position: absolute;
+  top: 210px;
+  left: -160px;
+}
+
+/* media-tabs when HOVER */
+#main-media:hover {
+  transform: scale(1.1);
+}
+#main-media:hover .media-tab1 {
+  transform: translateX(0%);
+}
+
+#main-media:hover .media-tab2 {
+  transform: translateX(0%);
+}
+
+#main-media:hover .media-tab3 {
+  transform: translateX(0%);
+}
+
+.tab-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-right: 0.5rem;
+}
+
+.tab-title h3 {
+  font-size: 1rem;
+  font-weight: bolder;
+  margin: 0;
+}
+
+.tab-title ion-icon {
+  font-size: 2rem;
+  align-self: center;
+  margin: 0;
+}
+
+.tab p {
+  font-size: 0.85rem;
+}
+
+#main-text {
+  width: 25vw;
+}
+
+/* HOVER effect */
+/* nav: */
+/* #logo:hover ion-icon {
+  color: rgba(255, 255, 255, 0.8);
+} */
+
+/* #logo ion-icon:hover {
+  color: rgba(255, 255, 255, 0.8);
+} */
+
+.nav-anchors:hover {
+  cursor: pointer;
+  color: #ff5f00;
+  transform: scale(1.05);
 }
