@@ -16,7 +16,7 @@ body {
 
 .container {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: linear-gradient(#00092c, #ff5f00);
   display: flex;
   flex-direction: column;
@@ -213,16 +213,16 @@ main {
   width: 40vw;
   padding-left: 2rem;
   /* height: 100%; */
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: flex-start; */
   /* margin-bottom: 0; */
 }
 
 #main-text-intro {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
 }
 
 #main-text-intro h1 {
@@ -237,21 +237,24 @@ main {
   justify-content: flex-start;
   align-items: flex-start;
   /* width: 40vw; */
-  margin-top: 0.5rem;
+  /* margin-top: 0.5rem; */
 }
 
 #main-text-technologies h2 {
   /* margin-bottom: 1rem; */
+  font-size: 2rem;
+  margin: 1.5rem 0;
 }
 
 .technologies {
   /* width: 40vw; */
-  height: 36vh;
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 20px;
+  /* height: 36vh; */
+  /* background: rgba(255, 255, 255, 0.3);
+  border-radius: 20px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* padding: 0.75rem; */
 }
 
 .technologies-front-end,
@@ -260,18 +263,34 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 20vw;
-  height: 20vh;
+  /* width: 20vw;
+  height: 20vh; */
+  padding: 0.75rem;
+  /* border: 1px solid rgba(255, 255, 255, 0.6); */
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.technologies-front-end {
+  margin-right: 0.75rem;
 }
 
 .technologies-front-end p,
 .technologies-back-end p {
-  font-size: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  /* padding: 0.5rem; */
+  color: #00092c;
+  background: red;
+  display: block;
+  border-radius: 20px;
+  padding: 0.25rem 0.5rem;
 }
 
 .technologies-image {
-  width: 80%;
-  height: 80%;
+  width: 75%;
+  height: 75%;
   object-fit: cover;
 }
 
