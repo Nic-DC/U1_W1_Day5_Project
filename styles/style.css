@@ -29,8 +29,8 @@ body {
 -------------------------*/
 
 nav {
-  width: 60vw;
-  height: 10vh;
+  width: 70%;
+  height: 12vh;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   display: flex;
   justify-content: space-between;
@@ -69,17 +69,12 @@ nav #logo h3 {
 
 .nav-li {
   list-style-type: none;
-  margin-left: 1rem;
+  margin-left: 1.5rem;
 }
-
-/* nav .nav-li:hover {
-  transform: scale(1.1);
-} */
 
 nav .nav-anchors {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.8);
-
   transition: color 350ms ease-in-out;
 }
 
@@ -96,8 +91,8 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  width: 60vw;
-  height: 90vh;
+  width: 70%;
+  height: 100%;
   color: #eeeeee;
 }
 
@@ -136,7 +131,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.8);
   border-radius: 20px;
   padding: 0 0.5rem;
   color: #00092c;
@@ -150,8 +145,8 @@ main {
   transform: translateX(-300%);
   transition: transform 350ms ease-in;
   position: absolute;
-  top: 400px;
-  left: -200px;
+  top: 320px;
+  left: -160px;
   background: rgba(255, 255, 255, 0.8);
 }
 
@@ -168,8 +163,8 @@ main {
   transform: translateX(-300%);
   transition: transform 350ms ease-in;
   position: absolute;
-  top: 190px;
-  left: -130px;
+  top: 120px;
+  left: -100px;
 }
 
 /* media-tabs when HOVER */
@@ -213,23 +208,26 @@ main {
 }
 
 #main-text {
-  height: 90vh;
-  /* margin-top: 2.5rem; */
-  width: 30vw;
+  height: 100%;
+  margin-top: 3.5rem;
+  width: 40vw;
+  padding-left: 2rem;
   /* height: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  /* margin-bottom: 0; */
 }
 
 #main-text-intro {
-  /* height: 35vh; */
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  margin-bottom: 0;
+  padding-bottom: 1rem;
 }
 
 #main-text-intro h1 {
+  font-size: 3rem;
+  line-height: 4rem;
   margin: 0;
 }
 
@@ -238,27 +236,46 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  /* height: 60vh; */
-  width: 30vw;
+  /* width: 40vw; */
+  margin-top: 0.5rem;
 }
 
 #main-text-technologies h2 {
-  margin: 0;
-  margin-top: 0.9rem;
   /* margin-bottom: 1rem; */
 }
 
 .technologies {
+  /* width: 40vw; */
+  height: 36vh;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
-  /* justify-content: flex-start;
-  align-items: flex-start; */
-  width: 30vw;
-  margin: 0;
+  align-items: center;
 }
 
+.technologies-front-end,
+.technologies-back-end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 20vw;
+  height: 20vh;
+}
+
+.technologies-front-end p,
+.technologies-back-end p {
+  font-size: 1rem;
+}
+
+.technologies-image {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+
+/*
 .technologies p span {
   color: #00092c;
   font-size: 1rem;
@@ -269,11 +286,9 @@ main {
 .technologies-front-end,
 .technologies-back-end {
   display: flex;
-  /* flex-direction: column; */
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 15vh;
   margin-top: 1rem;
 }
 
@@ -286,17 +301,19 @@ main {
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 20vh;
 }
 
-.technologies-front-end img,
-.technologies-back-end img {
-  width: 70%;
-  height: 70%;
+.technologies-images img {
+  width: 60%;
+  height: 90%;
   object-fit: contain;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
 }
 
 .technologies-front-end p,
 .technologies-back-end p {
   font-size: 1rem;
   font-weight: bolder;
-}
+} */
